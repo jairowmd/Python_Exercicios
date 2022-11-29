@@ -2,7 +2,7 @@
 Exercício Python 092: Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre-o (com idade) em um dicionário. 
 Se por acaso a CTPS for diferente de ZERO, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar.
 Obs.: aposentadoria em 35 anos de contribuição.
-
+Com quantos anos a pessoa vai se aposentar
 """
 # nome
 # ano de nascimento
@@ -49,9 +49,9 @@ elif dicionario['carteira'] != 0:
   dicionario['contratacao'] = int(input('informe seu ano de contratacao: '))
   dicionario['salario'] = int(input('Informe seu salario: '))
   print(15 * '=')
-# calculo para pegar o tempo que falta para aposentar
-  dicionario['aposentadoria'] = ( 35 -(ano -
-   dicionario['contratacao']) )
+
+  # calculo qual idade a pessoa vai aposentar
+  dicionario['aposentadoria'] = idade + ( (dicionario['contratacao'] + 35) - ano )
   
   print(15 * '=')
   
