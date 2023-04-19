@@ -1,0 +1,34 @@
+# Relembrando funções em 19/04/2023
+# função = rotina 
+
+# def insere a rotina para exibir a linha varias vezes
+#def mostralinha():
+#  print('-'*30)
+
+#mostralinha()
+#print('ola mundo')
+#mostralinha()
+
+#########################
+
+#def titulo(txt):
+#  print('-'*30)
+#  print(txt)
+#  print('-'*30)
+  
+#titulo('curso em video')
+#titulo('piton é fera')
+
+#########################
+
+# def soma(a, b):
+#  print(f'A = {a} e B = {b}')
+#  s = a + b
+#  print(f'A soma A + B = {s}')
+#  print(s)
+#  print('-'*20)
+
+# Programa principal
+#soma(a = 4, b = 5)
+#soma(a = 8, b = 9)
+#soma(a = 2, b = 1)
