@@ -32,3 +32,63 @@
 #soma(a = 4, b = 5)
 #soma(a = 8, b = 9)
 #soma(a = 2, b = 1)
+
+
+#parei em 21:52
+
+#https://www.cursoemvideo.com/curso/python-3-mundo-3/aulas/funcoes-em-python/modulos/funcoes-parte-1/
+
+
+#########################
+
+#def contador(* num):
+#  print(num)
+
+
+#contador(5, 7, 2)
+#contador(8, 0 )
+#contador(4, 1)
+
+#def contador(* num):
+#  for valor in num:
+#    print(f'{valor}', end=' ')
+#  print('FIM!')
+
+
+#contador(5, 7, 2)
+#contador(8, 0 )
+#contador(4, 1)
+
+#-------------------------
+# desenpacotamento
+#def contador(* num):
+#  tam = len(num)
+#  print(f'Recebi os valores {num} e sao ao todo {tam} numeros')
+
+#contador(5, 7, 2)
+#contador(8, 0 )
+#contador(4, 1)
+
+#-------------------------
+
+#def dobra(lst):
+#  pos = 0
+#  while pos < len(lst):
+#    lst[pos] *= 2
+#    pos += 1
+
+
+#valores = [5, 7, 2, 34]
+#dobra(valores)
+#print(valores)
+
+#-------------------------
+
+#def soma(* valores):
+#  s = 0
+#  for num in valores:
+#    s += num
+#  print(f'somando os valores {valores} temos {s}')
+
+#soma(5, 2)
+#soma(2, 9, 4)
