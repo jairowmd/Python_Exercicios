@@ -1,5 +1,8 @@
 import os
 
+# Lista armazena colecao de dados
+restaurantes = ['jocas bar','pizza do Ze']
+
 def exibir_nome_do_programa():
     print('sabor express\n')
 
@@ -11,16 +14,36 @@ def exibir_opcoes():
 
 # para limpar a tela usamos os.system('cls') para windows
 def finalizar_app():
-    os.system('cls')
-    print('finalizando app')
+    exibir_subtitulo('finalizando app')
 
+def voltar_ao_menu_principal():
+    input('Digite uma tecla para voltar ao menu principal ')
+    main()
 
 def opcao_invalida():
     print('opcao invalida!\n')
-    input('Digite uma tecla para voltar ao menu principal')
-    main()
+    voltar_ao_menu_principal()
 
+def exibir_subtitulo(texto):
+    os.system('cls')
+    print(texto)
+    print()
 
+def cadastrar_novo_restaurante():
+    exibir_subtitulo('Cadastro para novos restaurantes\n')
+    nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
+    # append coloca o nome do restaurante que foi definido la na lista para armazenamento
+    restaurantes.append(nome_do_restaurante)
+    print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso')
+    voltar_ao_menu_principal()
+
+def listar_restaurantes():
+    exibir_subtitulo('Listando os restaurantes\n')
+    
+    for restaurante in restaurantes:
+        print(f'.{restaurante}')
+
+    voltar_ao_menu_principal()
 
 def escolher_opcoes():
 
@@ -31,9 +54,9 @@ def escolher_opcoes():
 
 
         if opcao_escolhida == 1:
-            print('1. cadastrar restaurante')
+            cadastrar_novo_restaurante()
         elif opcao_escolhida == 2:
-            print('2. Listar restaurante')
+            listar_restaurantes()
         elif opcao_escolhida == 3:
             print('3. Ativar restaurante')
         elif opcao_escolhida == 4:
